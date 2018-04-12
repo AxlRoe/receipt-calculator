@@ -29,7 +29,7 @@ public class ImportedGoodDecorator implements Good {
     @Override
     public double getTax() {
         double importedTaxRate = settingsBean.getImportedTax();
-        return TaxCalculator.calculate(good.getPrice()*good.getQty(), importedTaxRate) + good.getTax();
+        return TaxCalculatorUtils.calculate(good.getPrice()*good.getQty(), importedTaxRate) + good.getTax();
     }
 
     @Override

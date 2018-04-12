@@ -31,7 +31,7 @@ public class GoodDecorator implements Good {
     @Override
     public double getTax() {
         double standardTaxRate = settingsBean.getStandardTax();
-        return TaxCalculator.calculate(good.getPrice()*good.getQty(), standardTaxRate);
+        return TaxCalculatorUtils.calculate(good.getPrice()*good.getQty(), standardTaxRate);
     }
 
     @Override
