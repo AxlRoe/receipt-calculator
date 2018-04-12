@@ -1,0 +1,5 @@
+{
+  "exempt" : ["book","pills","chocolates?"],
+  "standardTax" : 0.1,
+  "importedTax" : 0.05
+}
